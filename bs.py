@@ -49,14 +49,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 n = np.linspace(start=1, stop=50, num=50)
 bestcase = n
-averagecase = n**2  # Use ** for exponentiation
-worstcase = n**2    # Use ** for exponentiation
+averagecase = n**2
+worstcase = n**2
 plt.figure(figsize=(10, 6))
 plt.plot(n, bestcase, label="Best Case: O(n)", color="green", linewidth=2)
 plt.plot(n, averagecase, label="Average Case: O(n^2)", color="blue", linewidth=2)
 plt.plot(n, worstcase, label="Worst Case: O(n^2)", color="red", linewidth=2, linestyle=":")
 plt.title("Asymptotic Notations for BubbleSort", fontsize=18)
-plt.xlabel("Input Size (n)", fontsize=12)  # Corrected syntax
-plt.ylabel("Time Complexity", fontsize=12)  # Corrected syntax
+plt.xlabel("Input Size (n)", fontsize=12)
+plt.ylabel("Time Complexity", fontsize=12)
 plt.legend()
 plt.show()
